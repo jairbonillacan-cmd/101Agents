@@ -1,0 +1,4 @@
+# Alias del workspace: `cargo xtask <comando>` ejecuta la herramienta de
+# automatización del repositorio (tools/xtask) sin instalarla (patrón xtask).
+[alias]
+xtask = "run --package xtask --"
