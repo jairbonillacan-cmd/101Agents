@@ -1,0 +1,6 @@
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
+const diaries = defineCollection({ loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/diarios' }), schema: z.object({ title: z.string(), description: z.string(), lang: z.enum(['es','en']), translationKey: z.string(), date: z.string(), phase: z.number(), type: z.enum(['technical','design','history','art','studio']), systems: z.array(z.string()), minutes: z.number().positive(), status: z.enum(['draft','published']) }) });
+const changes = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/cambios' }), schema: z.object({ title: z.string(), version: z.string(), date: z.string(), channel: z.enum(['juego','diseno','sitio']), status: z.enum(['draft','published']), summary: z.object({ es: z.string(), en: z.string() }), added: z.object({ es: z.array(z.string()), en: z.array(z.string()) }), changed: z.object({ es: z.array(z.string()), en: z.array(z.string()) }), fixed: z.object({ es: z.array(z.string()), en: z.array(z.string()) }), removed: z.object({ es: z.array(z.string()), en: z.array(z.string()) }), performance: z.object({ es: z.array(z.string()), en: z.array(z.string()) }) }) });
+export const collections = { diaries, changes };

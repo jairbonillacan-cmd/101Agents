@@ -1,0 +1,14 @@
+# Human review required by path. Agent roles are managed with labels (docs/agents/ROLES.md).
+
+*                               @jairbonillacan-cmd
+/docs/master/                   @jairbonillacan-cmd
+/docs/adr/                      @jairbonillacan-cmd
+/crates/*/src/lib.rs            @jairbonillacan-cmd
+/.github/                       @jairbonillacan-cmd
+/tools/xtask/                   @jairbonillacan-cmd
+/Cargo.toml                     @jairbonillacan-cmd
+/deny.toml                      @jairbonillacan-cmd
+/games/epoch/data/history/      @jairbonillacan-cmd
+/games/epoch/data/entities/     @jairbonillacan-cmd
+/tests/golden/                  @jairbonillacan-cmd
+/website/                       @jairbonillacan-cmd

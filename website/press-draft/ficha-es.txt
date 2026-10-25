@@ -1,0 +1,30 @@
+101 AGENTS GAMES — FICHA PROVISIONAL
+
+Estudio: 101 Agents Games
+Juego: Project Epoch (nombre provisional)
+Motor: 101 Engine
+Género: gran estrategia histórica
+Estado: preparación
+Fecha comercial: no anunciada
+Precio: no anunciado
+Plataformas: pendientes de confirmación
+Idiomas de la vertical: español e inglés (objetivo)
+Región de la vertical: Mediterráneo oriental (propuesta)
+Periodo de la vertical: 1300–1600 (objetivo)
+Entidades jugables: 18 (objetivo)
+Demo pública: no anunciada
+Contacto: pendiente de designar
+
+DESCRIPCIÓN CORTA
+Project Epoch es el nombre provisional de un juego de gran estrategia histórica de 101 Agents Games. Su visión: guiar a un pueblo desde 1300 hasta más allá de 2060, cambiar las causas de la historia y comprender sus consecuencias. Actualmente está en preparación, sin fecha comercial confirmada ni demo.
+
+DESCRIPCIÓN LARGA
+Project Epoch, nombre provisional de 101 Agents Games, propone una partida de gran estrategia histórica desde 1300 hasta más allá de 2060. La ambición es seguir a un pueblo durante siete siglos sin convertir partidas ni reiniciar sus instituciones al cambiar de época.
+
+Cada guerra consume recursos, cada reforma redistribuye poder y cada innovación depende de condiciones previas. La historia real es una trayectoria plausible, no un guion obligatorio. Si cambian las causas, los acontecimientos pueden producir otros resultados. Un registro causal busca explicar por qué cambia un precio, se debilita una frontera o aparece una crisis.
+
+El desarrollo se apoya en agentes de IA para código, pruebas, documentación y herramientas, bajo dirección y revisión humana. El motor propuesto, 101 Engine, separa simulación y presentación para comprobar campañas reproducibles con 101 Lab.
+
+El primer objetivo jugable es una vertical del Mediterráneo oriental entre 1300 y 1600, con dieciocho entidades propuestas. La expansión geográfica y temporal llegará después de validar esa experiencia.
+
+El proyecto está en preparación. Sus fechas son estimaciones, sus sistemas son objetivos de diseño y no hay demo pública, precio ni fecha comercial confirmada. Los materiales de este paquete son borradores pendientes de aprobación editorial y revisión histórica.

@@ -1,0 +1,21 @@
+{
+  "name": "101-agents-games-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
+    "build": "node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
+    "check": "node scripts/check.mjs",
+    "audit:site": "node scripts/lighthouse.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.2",
+    "@astrojs/mdx": "8.1.1",
+    "@astrojs/sitemap": "3.7.4",
+    "yaml": "^2.8.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": { "lighthouse": "13.5.0" }
+}

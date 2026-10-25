@@ -1,0 +1,8 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+export async function getStaticPaths(){return (await getCollection('diaries')).filter(d=>d.data.lang==='en').map(entry=>({params:{entry:entry.data.translationKey},props:{entry}}))}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Layout lang="en" route={'diarios/'+entry.data.translationKey} title={entry.data.title} description={entry.data.description}><article class="section narrow article"><a class="breadcrumb" href="/en/diarios/">← All diaries</a><p class="eyebrow">DESIGN · PHASE {entry.data.phase} · {entry.data.minutes} MIN</p><h1>{entry.data.title}</h1><p class="article-date">24 Oct 2026 · Editorial draft awaiting review</p><div class="prose"><Content/></div></article></Layout>

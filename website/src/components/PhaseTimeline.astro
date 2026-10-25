@@ -1,0 +1,6 @@
+---
+import { phases, t, statusNames } from '../data/site';
+import StatusBadge from './StatusBadge.astro';
+const { lang = 'es' } = Astro.props;
+---
+<ol class="phase-timeline">{phases.map(phase => <li><div class="phase-marker">{String(phase.id).padStart(2,'0')}</div><div class="phase-content"><div class="phase-heading"><span class="eyebrow">{phase.period[lang]}</span><StatusBadge label={statusNames[phase.status][lang === 'es' ? 0 : 1]} tone={phase.status === 'next' ? 'green' : 'default'}/></div><h2>{phase.title[lang]}</h2><p>{phase.deliverable[lang]}</p><div class="exit-gate"><strong>{t(lang,'Para avanzar','Before moving forward')}</strong><p>{phase.gate[lang]}</p></div></div></li>)}</ol>

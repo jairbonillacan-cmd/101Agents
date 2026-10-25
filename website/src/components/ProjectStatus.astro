@@ -1,0 +1,9 @@
+---
+import { t, path, state } from '../data/site';
+import StatusBadge from './StatusBadge.astro';
+const { lang = 'es' } = Astro.props;
+---
+<aside class="project-status">
+ <div><span class="eyebrow">{t(lang,'El proyecto, hoy','The project, today')}</span><h2>{t(lang,'Primero, los cimientos.','First, the foundations.')}</h2></div>
+ <div><StatusBadge label={t(lang,'W0 · Preparación','W0 · Preparation')} tone="green"/><p>{t(lang,'Diseño documentado. Prototipo del sitio en revisión. La fase 0 del juego está planificada para noviembre–diciembre de 2026; sus hitos aún no están verificados.','Design documented. Website prototype under review. Game phase 0 is planned for November–December 2026; its milestones are not yet verified.')}</p><a class="text-link" href={path(lang,'hoja-de-ruta')}>{t(lang,'Ver la hoja de ruta','Explore the roadmap')} <span aria-hidden="true">↗</span></a><small>{t(lang,'Referencia de estado:','Status reference:')} {state.updated}</small></div>
+</aside>

@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Home from '../components/Home.astro';
+import SectionPage from '../components/SectionPage.astro';
+import { routeNames, path } from '../data/site';
+export function getStaticPaths(){return ['es','en'].flatMap(lang=>Object.keys(routeNames).map(route=>({params:{slug:path(lang,route).replace(/^\//,'').replace(/\/$/,'')||undefined},props:{lang,route}})))}
+const { lang, route } = Astro.props;
+---
+<Layout lang={lang} route={route} title={route?routeNames[route][lang==='es'?0:1]:'101 Agents Games'}>{route===''?<Home lang={lang}/>:<SectionPage lang={lang} route={route}/>}</Layout>

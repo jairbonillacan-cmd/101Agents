@@ -1,0 +1,48 @@
+- id: 0
+  status: next
+  period: { es: 'Nov–dic 2026', en: 'Nov–Dec 2026' }
+  title: { es: Preproducción, en: Preproduction }
+  deliverable: { es: 'Validar la economía, probar el mapa y elegir la región de la primera versión jugable.', en: 'Validate the economy, prototype the map and choose the first playable region.' }
+  gate: { es: 'Economía simplificada estable durante 200 años simulados y región elegida.', en: 'A simplified economy stable for 200 simulated years and a selected region.' }
+- id: 1
+  status: planned
+  period: { es: 'Ene–mar 2027', en: 'Jan–Mar 2027' }
+  title: { es: El núcleo del mundo, en: The world’s foundations }
+  deliverable: { es: 'Tiempo, territorios, Estados, guardado y un mapa que se pueda explorar.', en: 'Time, territories, states, saves and an explorable map.' }
+  gate: { es: '300 años sin gráficos con resultados idénticos, mapa navegable y cliente elegido.', en: '300 years without graphics with identical results, a navigable map and a chosen client.' }
+- id: 2
+  status: planned
+  period: { es: 'Abr–jun 2027', en: 'Apr–Jun 2027' }
+  title: { es: Economía y población, en: Economy and population }
+  deliverable: { es: 'Mercados, rutas, grupos sociales y el registro que explica por qué cambia un precio.', en: 'Markets, routes, social groups and a ledger explaining why a price changes.' }
+  gate: { es: '100 años sin romper las reglas contables, precios plausibles y causas consultables.', en: '100 years with sound accounting, plausible prices and inspectable causes.' }
+- id: 3
+  status: planned
+  period: { es: 'Jul–sep 2027', en: 'Jul–Sep 2027' }
+  title: { es: Diplomacia y guerra, en: Diplomacy and war }
+  deliverable: { es: 'Tratados, ejércitos, abastecimiento, asedios y acuerdos de paz.', en: 'Treaties, armies, supply, sieges and peace agreements.' }
+  gate: { es: '100 campañas de IA con guerras que terminan de forma válida y sin países bloqueados.', en: '100 AI campaigns with valid war outcomes and no stuck countries.' }
+- id: 4
+  status: planned
+  period: { es: 'Oct–dic 2027', en: 'Oct–Dec 2027' }
+  title: { es: La historia cobra vida, en: History comes to life }
+  deliverable: { es: 'Situaciones históricas, tecnología, dinastías y epidemias conectadas al mundo.', en: 'Historical situations, technology, dynasties and epidemics connected to the world.' }
+  gate: { es: 'Situaciones dentro de los rangos acordados y tecnología dentro de sus límites.', en: 'Situations within agreed ranges and technology within its limits.' }
+- id: 5
+  status: planned
+  period: { es: 'Ene–abr 2028', en: 'Jan–Apr 2028' }
+  title: { es: Primera vertical jugable, en: First playable vertical slice }
+  deliverable: { es: 'Objetivo: Mediterráneo oriental, 1300–1600, 18 entidades, unas 350 provincias y ES/EN.', en: 'Target: Eastern Mediterranean, 1300–1600, 18 entities, around 350 provinces and ES/EN.' }
+  gate: { es: 'Jugadores externos entienden por qué ocurren las cosas y quieren seguir jugando.', en: 'External players understand why events happen and want to keep playing.' }
+- id: 6
+  status: planned
+  period: { es: 'May 2028–2029', en: 'May 2028–2029' }
+  title: { es: Expandir el horizonte, en: Expanding the horizon }
+  deliverable: { es: 'Europa, Mediterráneo y Oriente Próximo; ampliar la continuidad hasta 1900.', en: 'Europe, the Mediterranean and the Near East; extending continuity to 1900.' }
+  gate: { es: 'Una misma partida cruza 1300–1900 con continuidad y rendimiento a escala regional.', en: 'One campaign spans 1300–1900 with continuity and regional-scale performance.' }
+- id: 7
+  status: planned
+  period: { es: '2029 en adelante', en: '2029 onwards' }
+  title: { es: Un mundo completo, en: A complete world }
+  deliverable: { es: 'Objetivo: alcance mundial, siglos XX y XXI, 2060+, modding y pulido.', en: 'Target: global scope, the 20th and 21st centuries, 2060+, modding and polish.' }
+  gate: { es: 'Cumplir los objetivos de calidad, rendimiento y contenido; ajustar el alcance si hace falta.', en: 'Meet quality, performance and content targets; adjust scope if necessary.' }

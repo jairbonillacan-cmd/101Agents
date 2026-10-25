@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# W0 private prototype. Change only after public-launch approval.

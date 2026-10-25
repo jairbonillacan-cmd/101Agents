@@ -1,0 +1,42 @@
+# Rust
+/target/
+**/target/
+
+# Website (Astro): dependencies, build output and caches
+node_modules/
+website/dist/
+website/.astro/
+website/.lighthouseci/
+
+# Private hosting identity of the website preview; stays local
+website/.openai/
+
+# Secrets and local environment: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+secrets/
+credentials*.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local editor, OS and agent settings
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+.claude/
+
+# Local review screenshots
+website-review/

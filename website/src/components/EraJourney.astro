@@ -1,0 +1,6 @@
+---
+import { eras, t } from '../data/site';
+const { lang = 'es', full = false } = Astro.props;
+const i = lang === 'es' ? 0 : 1;
+---
+<div class:list={['era-grid', { full }]}>{eras.map((era, index) => <article class:list={['era',era.style]}><div class="era-map"><img src="/images/atlas.svg" width="1100" height="800" alt={t(lang,'Ilustración conceptual del Mediterráneo oriental','Conceptual illustration of the Eastern Mediterranean')} loading="lazy"/><span class="era-years">{era.years}</span></div><div class="era-copy"><span class="eyebrow">{String(index + 1).padStart(2,'0')} / {era.scope[i]}</span><h3>{era.title[i]}</h3><p>{era.text[i]}</p><p class="era-cause">{era.cause[i]}</p></div></article>)}</div>

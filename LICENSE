@@ -1,0 +1,44 @@
+Copyright (c) 2026 Jair Bonilla (101 Agents Games). All rights reserved.
+
+PROPRIETARY LICENSE — SOURCE VISIBLE FOR REFERENCE ONLY
+
+This repository and everything in it — including source code, the 101 Engine,
+game design documents, data, text, translations, images, audio and the website —
+is the proprietary property of the copyright holder.
+
+The repository is publicly visible so that it can be read. Visibility does not
+grant any license. Except as stated below, no permission is granted to use,
+copy, modify, merge, publish, distribute, sublicense, sell, or create derivative
+works from any part of this repository, in whole or in part, without prior
+written permission from the copyright holder.
+
+Exceptions:
+
+1. Viewing and forking on GitHub. You may view this repository and fork it on
+   GitHub to the extent required by the GitHub Terms of Service. A fork does not
+   grant any additional right to use, run, modify or distribute its contents.
+
+2. Third-party components. Dependencies and other third-party materials keep
+   their own licenses, which apply to those materials only.
+
+3. Contributions. Contributions are accepted by invitation only. By submitting a
+   contribution you agree that it may be used, modified and distributed by the
+   copyright holder as part of this project under any license the copyright
+   holder chooses.
+
+Trademarks. "101 Agents Games", "101 Engine" and related names and logos are not
+licensed under any terms in this file.
+
+Disclaimer. The contents are provided "as is", without warranty of any kind,
+express or implied. In no event shall the copyright holder be liable for any
+claim, damages or other liability arising from the contents or their use.
+
+For permission requests, open an issue in this repository.
+
+---
+
+Resumen en español (el texto en inglés es el que rige): todo el contenido es
+propiedad del titular y está protegido por derechos de autor. Que el repositorio
+sea público solo permite leerlo (y hacer fork en GitHub según sus condiciones);
+no autoriza a usar, copiar, modificar ni redistribuir nada sin permiso escrito.
+Las dependencias de terceros conservan sus propias licencias.

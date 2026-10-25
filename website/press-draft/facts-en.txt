@@ -1,0 +1,30 @@
+101 AGENTS GAMES — PROVISIONAL FACT SHEET
+
+Studio: 101 Agents Games
+Game: Project Epoch (working title)
+Engine: 101 Engine
+Genre: historical grand strategy
+Status: preparation
+Commercial release date: not announced
+Price: not announced
+Platforms: awaiting confirmation
+Vertical slice languages: Spanish and English (target)
+Vertical slice region: Eastern Mediterranean (proposed)
+Vertical slice period: 1300–1600 (target)
+Playable entities: 18 (target)
+Public demo: not announced
+Contact: to be designated
+
+SHORT DESCRIPTION
+Project Epoch is the working title of a historical grand strategy game from 101 Agents Games. Its vision is to guide a people from 1300 to beyond 2060, change the causes of history and understand their consequences. Currently in preparation, with no confirmed commercial release date or public playable demo.
+
+LONG DESCRIPTION
+Project Epoch, the working title from 101 Agents Games, proposes a historical grand strategy campaign from 1300 to beyond 2060. The ambition is to follow a people across seven centuries without converting saves or resetting institutions when a new era begins.
+
+Every war consumes resources, every reform redistributes power and every innovation depends on earlier conditions. Real history is a plausible trajectory rather than a compulsory script. When causes change, events can produce different outcomes. A causal ledger aims to explain why a price changes, a border weakens or a crisis emerges.
+
+Development uses AI agents for code, tests, documentation and tools, under human direction and review. The proposed 101 Engine separates simulation from presentation so that reproducible campaigns can be examined with 101 Lab.
+
+The first playable target is an Eastern Mediterranean vertical slice spanning 1300 to 1600, with eighteen proposed entities. Geographic and temporal expansion will follow validation of that experience.
+
+The project is in preparation. Its dates are estimates, its systems are design targets, and no public demo, price or commercial release date has been confirmed. All materials in this package are drafts awaiting editorial approval and historical review before they can become official public press resources.

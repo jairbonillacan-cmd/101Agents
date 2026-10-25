@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" fill="none">
+<defs>
+ <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0H0V100" stroke="#7b8c81" stroke-width=".6" opacity=".26"/></pattern>
+ <pattern id="sea" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 6h3m6 0h3" stroke="#7e9188" stroke-width=".4" opacity=".25"/></pattern>
+ <pattern id="hills" width="48" height="38" patternUnits="userSpaceOnUse"><path d="m3 25 7-13 8 13m-10-5 3-5m20 13 6-11 8 11" stroke="#918870" stroke-width=".8" opacity=".32"/></pattern>
+ <radialGradient id="paper"><stop stop-color="#efe7d2"/><stop offset="1" stop-color="#dbd4ba"/></radialGradient>
+ <filter id="texture"><feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <path id="europe" d="M0 0H748L733 51 741 82 722 120 715 160 694 183 662 188 630 179 601 184 578 200 584 219 572 235 552 239 548 253 527 255 515 244 506 250 497 239 480 251 459 251 448 264 426 268 420 287 405 300 408 318 428 329 434 349 427 353 416 338 405 333 413 361 400 360 389 335 379 325 381 349 371 350 360 326 347 325 339 334 337 353 356 373 345 381 362 397 354 408 341 393 334 405 319 386 314 393 299 378 306 368 294 359 301 343 287 330 291 315 275 300 262 267 243 248 234 223 211 210 195 182 176 159 171 141 153 130 135 137 135 159 145 173 148 196 170 214 188 240 215 265 237 275 254 276 263 290 244 296 235 285 230 296 239 318 228 341 217 342 208 326 211 311 198 297 185 285 180 263 159 245 153 225 127 207 110 189 96 162 74 155 58 163 49 187 32 194 14 191 0 198Z"/>
+ <path id="asia" d="M1100 0H1030L1005 44 1032 83 1011 116 980 134 951 147 927 144 902 158 867 155 838 171 800 176 765 167 740 173 723 188 700 199 664 204 634 200 608 217 591 226 596 240 583 252 567 259 553 275 531 279 519 294 526 307 511 315 524 326 503 341 512 353 493 366 509 380 525 371 537 386 555 381 566 397 589 398 610 408 638 401 659 416 686 411 705 425 725 421 739 410 751 414 764 401 789 407 810 395 831 401 848 419 863 424 877 449 882 485 888 523 896 551 891 583 902 615 916 648 930 681 950 716 977 743 998 780 1100 800Z"/>
+ <path id="africa" d="M0 597L36 587 67 600 102 593 141 603 179 604 199 620 237 616 258 637 291 646 324 646 351 637 370 620 402 621 432 628 461 646 490 657 516 664 538 676 571 678 609 685 645 682 685 677 712 661 733 659 753 673 775 685 800 683 821 670 843 663 865 679 882 701 899 700 920 736 935 759 958 780 963 800H0Z"/>
+</defs>
+<rect width="1100" height="800" fill="#cdd5c7"/>
+<rect width="1100" height="800" fill="url(#sea)"/>
+<g stroke="#8b8d73" stroke-width="1.3" stroke-linejoin="round">
+ <use href="#europe" fill="url(#paper)"/><use href="#asia" fill="url(#paper)"/><use href="#africa" fill="url(#paper)"/>
+ <path d="m159 359 19 2 21 12 20-6-1 12-21 10-15-2-10-13-17-4Zm-70-99 12 4 5 27-9 16-12-4-2-20Zm9-46 8 9-1 25-9 4-5-17Zm261 239 18-4 35 9 28-3 16 6-5 9-26 1-29-6-26 1-12-6Zm362 48 14-5 22 2 20-9-7 15-23 12-29-3-9-6Zm-293-145 8 3 4 16-9 4-7-9Zm27 37 7 2 4 12-6 5-8-8Zm-48-48 5 4 2 17-7 1-5-13Zm41 63 10 3 2 10-11 1Zm29 12 12 2 2 7-11 4Zm18-30 7 2 3 9-9 3Zm-104 12 5 1 2 6-6 3Z" fill="#e9e1cb"/>
+</g>
+<g opacity=".65"><use href="#europe" fill="url(#hills)"/><use href="#asia" fill="url(#hills)"/><use href="#africa" fill="url(#hills)"/></g>
+<path d="M282 71q-11 61 43 93t102 41q65 13 111-18M956 213q-30 32-27 59t-37 55M739 680q-12 51 9 120" stroke="#839e96" stroke-width="2" opacity=".65"/>
+<g stroke="#a19578" stroke-dasharray="3 5" opacity=".65"><path d="M218 0q-10 100 51 168l66 23 74 38M476 0l-30 123 30 66 49 42M711 270l-48 59-2 83M833 221l-38 81 15 92M478 652l-35 148"/></g>
+<rect width="1100" height="800" fill="url(#grid)"/>
+<g stroke="#935d40" stroke-width="1.5" stroke-dasharray="5 7" opacity=".8"><path d="M159 139Q279 276 356 418T554 260"/><path d="M554 260Q634 424 743 502T765 673"/><path d="M356 418Q340 596 765 673"/></g>
+<g fill="#384e44" font-family="Georgia,serif" text-anchor="middle">
+ <text x="335" y="116" font-size="27" letter-spacing="6" transform="rotate(-10 335 116)">BALCANES</text>
+ <text x="765" y="301" font-size="32" letter-spacing="9" transform="rotate(3 765 301)">ANATOLIA</text>
+ <text x="531" y="579" font-size="22" font-style="italic" letter-spacing="7" fill="#526c65">MARE MEDITERRANEUM</text>
+ <text x="875" y="95" font-size="19" font-style="italic" letter-spacing="4" fill="#526c65">PONTUS EUXINUS</text>
+ <text x="395" y="427" font-size="12" letter-spacing="4" fill="#526c65" transform="rotate(-65 395 427)">MAR EGEO</text>
+ <text x="696" y="754" font-size="26" letter-spacing="7">AEGYPTUS</text>
+ <text x="144" y="531" font-size="15" font-style="italic" letter-spacing="3" fill="#526c65">MAR IONIUM</text>
+ <text x="995" y="501" font-size="24" letter-spacing="5" transform="rotate(75 995 501)">LEVANTE</text>
+</g>
+<g fill="#754d38" stroke="#f0e8d7" stroke-width="2"><circle cx="554" cy="260" r="6"/><circle cx="159" cy="139" r="4"/><circle cx="356" cy="418" r="4"/><circle cx="765" cy="673" r="4"/><circle cx="743" cy="502" r="4"/></g>
+<circle cx="554" cy="260" r="15" stroke="#754d38" opacity=".4"/>
+<g fill="#4b493b" font-family="Georgia,serif" font-size="15"><text x="573" y="248">Constantinopolis</text><text x="173" y="133">Venetia</text><text x="294" y="435">Athenae</text><text x="743" y="650">Alexandria</text><text x="748" y="531">Cyprus</text></g>
+<g transform="translate(958 625)" stroke="#5c6a55"><circle r="48" stroke-width=".8"/><circle r="37" stroke-width=".5"/><path d="M0-60 9-9 60 0 9 9 0 60-9 9-60 0-9-9Z" fill="#e5ddc7"/><path d="M0-60V0H60L9-9ZM0 60V0H-60L-9 9Z" fill="#62715c"/><path d="m-30-30 30 18 30-18-18 30 18 30-30-18-30 18 18-30Z" opacity=".5"/><text y="-70" text-anchor="middle" fill="#5c6a55" stroke="none" font-family="Georgia" font-size="17">N</text></g>
+<g fill="#59644f" font-family="monospace" font-size="10" opacity=".6"><text x="24" y="26">TABULA · MEDITERRANEUM ORIENTALE</text><text x="22" y="779">CONCEPT / 101 AGENTS GAMES</text><text x="891" y="779">XIV · CARTOGRAPHIA</text></g>
+<rect width="1100" height="800" filter="url(#texture)" opacity=".22"/>
+</svg>
