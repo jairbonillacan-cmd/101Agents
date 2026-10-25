@@ -1,0 +1,2 @@
+# Formato de todo el workspace con rustfmt, usando la edición 2024 de Rust.
+edition = "2024"

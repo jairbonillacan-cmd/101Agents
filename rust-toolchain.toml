@@ -1,0 +1,6 @@
+# Toolchain fijada del repositorio 101Agents: todos los agentes y el CI deben
+# compilar con esta versión exacta para garantizar builds reproducibles.
+[toolchain]
+channel = "1.99.1"
+components = ["rustfmt", "clippy"]
+profile = "minimal"

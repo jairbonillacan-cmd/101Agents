@@ -1,0 +1,12 @@
+# xtask: herramienta de automatización del repositorio (alias `cargo xtask`).
+# Sin dependencias externas: solo `std`, para compilar rápido y sin riesgo
+# de supply-chain. Hereda edición, licencia y lints del workspace.
+[package]
+name = "xtask"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lints]
+workspace = true
