@@ -1,0 +1,73 @@
+# CI del workspace Rust (crates e101-* + tools/xtask).
+#
+# Política de paths (repo público: minimizar minutos de Actions): solo se
+# ejecuta cuando cambian código Rust, manifiestos, toolchain, política de
+# dependencias o este mismo workflow. Website y docs no activan este CI
+# (website tiene su propio workflow).
+#
+# GitHub Actions no admite anclas YAML: la lista de paths está duplicada
+# a propósito en pull_request y push.
+
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - 'crates/**'
+      - 'tools/**'
+      - 'Cargo.*'
+      - 'rust-toolchain.toml'
+      - 'deny.toml'
+      - '.github/workflows/ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'crates/**'
+      - 'tools/**'
+      - 'Cargo.*'
+      - 'rust-toolchain.toml'
+      - 'deny.toml'
+      - '.github/workflows/ci.yml'
+
+# Repo público: permiso mínimo, solo lectura del contenido. Nada de escritura.
+permissions:
+  contents: read
+
+# Cancela la ejecución anterior del mismo PR/rama (ahorra minutos en PRs
+# con pushes seguidos).
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      # rustup lee rust-toolchain.toml e instala el canal 1.99.1 con
+      # rustfmt y clippy (profile minimal).
+      - name: Install toolchain from rust-toolchain.toml
+        run: rustup toolchain install
+
+      # Caché de Swatinem/rust-cache: además de los artefactos de compilación,
+      # conserva ~/.cargo/bin para reutilizar el binario de cargo-deny entre
+      # ejecuciones (repo público: menos minutos recompilando).
+      - name: Cache cargo build artifacts and cargo-deny
+        uses: Swatinem/rust-cache@v2
+        with:
+          cache-directories: ~/.cargo/bin
+
+      # Si cargo-deny ya está en caché, cargo install lo detecta y termina
+      # rápido.
+      - name: Install cargo-deny
+        run: cargo install cargo-deny --locked
+
+      # fmt --check + clippy -D warnings + test --workspace + cargo deny check.
+      - name: Run checks
+        run: cargo xtask check
