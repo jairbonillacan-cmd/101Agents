@@ -1,0 +1,67 @@
+# deny.toml — Control de licencias, avisos de seguridad, duplicados y fuentes
+# de las dependencias del workspace de 101 Engine (101 Agents Games).
+# Formato v2 de cargo-deny; validado con cargo-deny 0.20.2 (`cargo deny check`).
+
+# -----------------------------------------------------------------------------
+# Licencias: se aceptan las licencias permisivas habituales del ecosistema
+# Rust, compatibles con la distribución del código propietario del estudio.
+# -----------------------------------------------------------------------------
+[licenses]
+version = 2
+allow = [
+    "MIT",
+    "Apache-2.0",
+    # La excepción LLVM acompaña a algunas dependencias de la ASF (p. ej.
+    # componentes de la cadena de herramientas) por su ensamblado en C++.
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Zlib",
+    # La declara unicode-ident (tablas del estándar Unicode).
+    "Unicode-3.0",
+    # Licencia propia (propietaria) de los crates de este workspace; véase
+    # LICENSE en la raíz y workspace.package.license en Cargo.toml.
+    "LicenseRef-101-Agents-Games-Proprietary",
+]
+# MPL-2.0 NO se autoriza de forma global (es copyleft por archivo). Si algún
+# día un crate imprescindible la exigiera, se añadiría como "excepción
+# documentada", citando el crate y el motivo:
+# exceptions = [
+#     { allow = ["MPL-2.0"], crates = ["nombre-del-crate"] },
+# ]
+
+# -----------------------------------------------------------------------------
+# Avisos de seguridad (RUSTSEC): las vulnerabilidades conocidas rompen la
+# verificación, igual que los crates retirados del registro.
+# -----------------------------------------------------------------------------
+[advisories]
+version = 2
+# Un crate yanked (retirado de crates.io) puede fallar en cualquier compilación
+# futura: se considera error desde el primer momento.
+yanked = "deny"
+# Nota: en formato v2 ya no existen campos como `vulnerability = "deny"`: los
+# avisos de vulnerabilidad y de mantenimiento están fijados a error por
+# defecto y solo se exceptúan uno a uno con `ignore = ["RUSTSEC-XXXX-XXXX"]`.
+
+# -----------------------------------------------------------------------------
+# Duplicados y crates vetados. Nota: desde cargo-deny 0.20 esta sección ya no
+# admite el campo `version` (solo existe en licenses y advisories).
+# -----------------------------------------------------------------------------
+[bans]
+# El ecosistema aún fuerza versiones duplicadas de dependencias transitivas
+# (p. ej. itoa o windows-sys): se avisa para revisarlo en cada PR en lugar de
+# bloquear la compilación.
+multiple-versions = "warn"
+
+# -----------------------------------------------------------------------------
+# Fuentes permitidas para descargar dependencias. Esta sección tampoco admite
+# `version` en cargo-deny 0.20.
+# -----------------------------------------------------------------------------
+[sources]
+# Registro por defecto y único autorizado: crates.io.
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+# Un registro no reconocido genera un aviso para revisarlo; una fuente git
+# desconocida se veta directamente (mayor riesgo de supply-chain).
+unknown-registry = "warn"
+unknown-git = "deny"

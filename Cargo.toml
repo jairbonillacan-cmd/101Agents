@@ -1,0 +1,39 @@
+# Cargo.toml — Workspace virtual de 101 Engine (101 Agents Games).
+# Motor de simulación de gran estrategia histórica: determinista, punto fijo, sin flotantes.
+# Los crates de simulación viven en crates/ con prefijo e101-; la automatización en tools/xtask.
+[workspace]
+resolver = "3"
+members = ["crates/*", "tools/xtask"]
+
+[workspace.package]
+edition = "2024"
+license = "LicenseRef-101-Agents-Games-Proprietary"
+
+[workspace.lints.clippy]
+# El estado persistente usa punto fijo; la aritmética flotante queda prohibida por defecto.
+float_arithmetic = "deny"
+unwrap_used = "warn"
+
+[workspace.dependencies]
+# serde: serialización de datos y guardados con derive.
+serde = { version = "1.0.229", features = ["derive"] }
+# ron: contenido del juego legible en games/epoch/data.
+ron = "0.12.2"
+# thiserror: errores con tipo en bibliotecas.
+thiserror = "2.0.21"
+# proptest: pruebas de propiedad.
+proptest = "1.12.0"
+# rayon: paralelismo determinista.
+rayon = "1.12.0"
+# blake3: hash de estado por tick.
+blake3 = "1.8.7"
+# postcard: formato binario de guardados.
+postcard = { version = "1.1.3", features = ["alloc"] }
+# zstd: compresión de guardados.
+zstd = "0.14.3"
+# rand_core: base de e101-rng.
+rand_core = "0.10.1"
+# indexmap: mapas con orden de inserción determinista.
+indexmap = "2.14.2"
+# slotmap: almacenamiento SoA con IDs estables.
+slotmap = "1.1.1"
