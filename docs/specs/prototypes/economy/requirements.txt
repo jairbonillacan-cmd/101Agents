@@ -1,0 +1,6 @@
+# Prototipo económico T-008 (economy.py)
+#
+# matplotlib es la única dependencia externa y solo se usa para las gráficas
+# opcionales (--plot); la simulación en sí usa únicamente la biblioteca
+# estándar de Python 3.12.
+matplotlib==3.11.2

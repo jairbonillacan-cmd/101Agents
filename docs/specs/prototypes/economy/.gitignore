@@ -1,0 +1,4 @@
+# Resultados generados (PNG, CSV): no se suben
+out/
+out_dev/
+__pycache__/
